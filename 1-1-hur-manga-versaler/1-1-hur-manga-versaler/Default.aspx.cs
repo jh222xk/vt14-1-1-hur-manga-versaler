@@ -18,15 +18,8 @@ namespace _1_1_hur_manga_versaler
         {
             TextBox1.Enabled = false;
             UppercaseCount.Text = "Texten innehåller " + Model.TextAnalyzer.GetNumberofCapitals(TextBox1.Text) + " versaler";
-            SendButton.CssClass = "hidden";
-            ClearButton.CssClass = "show";
+            SendButton.Visible = false;
+            ClearButton.Visible = true;
         }
-
-        protected void ClearButton_Click(object sender, EventArgs e)
-        {
-            ClearButton.CssClass = "hidden";
-            SendButton.CssClass = "show";
-        }
-        
     }
 }

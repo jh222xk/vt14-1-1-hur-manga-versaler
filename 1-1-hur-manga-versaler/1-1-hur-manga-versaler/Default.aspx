@@ -20,7 +20,7 @@
                 <asp:Button ID="SendButton" runat="server" Text="Skicka" OnClick="SendButton_Click" />
             </p>
             <p>
-                <asp:Button ID="ClearButton" runat="server" Text="Rensa" OnClick="ClearButton_Click" CssClass="hidden" />
+                <asp:Button ID="ClearButton" runat="server" Text="Rensa" Visible="false" />
             </p>
             <p>
                 <asp:Label ID="UppercaseCount" runat="server" Text=""></asp:Label>
